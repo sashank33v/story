@@ -18,6 +18,4 @@ Aa roju Ramu oka **mukhyamaina lesson** nerchukunnadu — **chinna sahayam kuda 
 
 ## Audio
 
-<audio controls>
-  <source src="audio/story1.wav" type="audio/wav">
-</audio>
+▶️ [Play Story Audio](audio/story1.wav)
