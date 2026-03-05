@@ -1,21 +1,43 @@
-# Telugu Story Text To Speech
+# Telugu Story Text To Speech (Sarvam AI)
 
-This project generates Telugu story audio using Sarvam AI TTS.
+Generate Telugu story audio (`te-IN`) from text using Sarvam AI.
 
----
+## 1) Install dependencies
 
-# Story Example 1
+```bash
+pip install -r requirements.txt
+```
 
-## Text
+## 2) Set API key
 
-Oka chinna gramam lo **Ramu** ane oka abbayi undevadu. Ataniki **prakruthi (nature)** ante chala istam. Prathi roju school ki velladaniki mundu, tana gramam daggara unna **cheruvu** daggara ki velladu. Akkada paksulu, chetlu chusthu chala santhoshamga untadu.
+```bash
+export SARVAM_API_KEY="your_sarvam_api_key"
+```
 
-Oka roju, cheruvu daggara oka **gaya padina chinna pakshi** ni chusadu. Ramu danini jagrathaga intiki teesukoni velladu. Daniki **neellu ichadu, mandhu vesadu**, mariyu konni rojulu chala jagrathaga chusukunnadu.
+You can also use `SARVAM_API_SUBSCRIPTION_KEY`.
 
-Konni rojula tharvatha, aa pakshi **malli eguragaligindi**. Ramu chala santhosham tho danini **akasham lo vidichadu**. Pakshi santhoshamga eguripoyindi.
+## 3) Run with a story file
 
-Aa roju Ramu oka **mukhyamaina lesson** nerchukunnadu — **chinna sahayam kuda oka jeevitham lo pedda maarpu teesukosthundi**. Appati nundi Ramu eppudu avasaram unna variki sahayam cheyyadaniki try chesadu.
+```bash
+python sarvam_tts_telugu.py --input story.txt --output audio/story_telugu.wav
+```
 
-## Audio
+## 4) Run with inline text
 
-▶️ [Play Story Audio](audio/story1.wav)
+```bash
+python sarvam_tts_telugu.py --text "ఒక చిన్న కథ..." --output audio/story_telugu.wav
+```
+
+## Optional arguments
+
+- `--speaker` (default: `shubh`)
+- `--model` (default: `bulbul:v3`)
+- `--language` (default: `te-IN`)
+
+## Backward compatibility
+
+You can still run:
+
+```bash
+python generate_audio.py --input story.txt --output audio/story_telugu.wav
+```
