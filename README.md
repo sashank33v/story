@@ -20,5 +20,9 @@ Appati nundi Ramu eppudu avasaram unna variki sahayam cheyyadaniki try chesadu.
 
 ## Listen To The Story
 
+<audio controls>
+  <source src="https://raw.githubusercontent.com/sashank33v/story/main/audio/story1.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 - [Play Story Audio (MP3)](https://raw.githubusercontent.com/sashank33v/story/main/audio/story1.mp3)
-- [Play Story Audio (WAV)](https://raw.githubusercontent.com/sashank33v/story/main/audio/story1.wav)
